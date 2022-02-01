@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pinkpers: #E82B88;
+}
+
+@font-face{
+    font-family:NunitoEBold;
+    src: url("/fonts/NunitoSans-ExtraBold.ttf") format("ttf");
+}
+
+.nossos-projetos{
+    background-color: #C4C4C4;
+    border-bottom:1px solid var(--pinkpers);
+}
+
+.nossos-projetos .descricao-acoes{
+    width: 23%;
+    text-align: center;
+    margin: 0 auto;    
+    color: black;
+    font-size: 36px;
+    font-weight: 800px;
+    font-family: nunitoSans;
+    margin: 5% auto;
+}
+
+.nossos-projetos .caixa-divisora-azul{
+    background-color: #2076F6;
+    width: calc(100vw/3);
+    height: calc(0.177*100vw/3);
+    margin: 0 auto;
+    border-radius:16px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-family: NunitoEBold;
+    font-size: 45px;
+}
+
+.area-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.area-cards .card-item{
+    width: calc(70vw/3);
+    height: calc(1.47*70vw/3);
+    margin: 15px;
+    background-color: whitesmoke;
+    border-radius:32px;
+    margin-bottom: 26px;
+}
+
+.card-item .container-imagem{
+    height:50%;
+}
+
+.card-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 32px 32px 0 0;
+}
+
+.card-item .container-descricao{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 50%;
+    font-size:1em;
+}
+
+.card-item .container-descricao h2{
+    color: var(--pinkpers);
+    text-align: center;
+    font-family: NunitoEBold;
+}
+
+section .botao-colabore{
+    box-sizing: border-box;
+    width:calc(100vw/5);
+    background-color: var(--pinkpers);
+    margin: 5% auto;
+    height: calc(0.177*100vw/3);
+    border-radius:16px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    font-family: NunitoEBold;
+}
+
+.tit-entre-em-contato{
+    margin: 0 auto;
+    margin-top:15%;
+    width:calc(100vw/4);
+    color:var(--pinkpers);
+    font-family: NunitoEBold;
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 22.25px;
+}
+
+
+.entre-em-contato{
+    height:100vh;
+    background-color:white;
+}
