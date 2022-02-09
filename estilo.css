@@ -5,6 +5,7 @@
 
 :root{
     --pinkpers: #E82B88;
+    --greypers: #c4c4c452;
 }
 
 @font-face{
@@ -13,19 +14,9 @@
 }
 
 .nossos-projetos{
-    background-color: #C4C4C4;
+    background-color: var(--greypers);
     border-bottom:1px solid var(--pinkpers);
-}
-
-.nossos-projetos .descricao-acoes{
-    width: 23%;
-    text-align: center;
-    margin: 0 auto;    
-    color: black;
-    font-size: 36px;
-    font-weight: 800px;
-    font-family: nunitoSans;
-    margin: 5% auto;
+    width: 100vw;
 }
 
 .nossos-projetos .caixa-divisora-azul{
@@ -42,6 +33,17 @@
     font-size: 45px;
 }
 
+.nossos-projetos .descricao-acoes{
+    width: 23%;
+    text-align: center;
+    margin: 0 auto;    
+    color: black;
+    font-size: 36px;
+    font-weight: 800px;
+    font-family: nunitoSans;
+    margin: 5% auto;
+}
+
 .area-cards{
     display: flex;
     justify-content: center;
@@ -50,12 +52,13 @@
 
 
 .area-cards .card-item{
-    width: calc(70vw/3);
+    width: calc(80vw/3);
     height: calc(1.47*70vw/3);
     margin: 15px;
     background-color: whitesmoke;
     border-radius:32px;
     margin-bottom: 26px;
+    box-shadow: 0.7px 1px 2px var(--pinkpers);
 }
 
 .card-item .container-imagem{
@@ -72,10 +75,9 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin-top: 3%;
     justify-content:space-around;
-    height: 50%;
+    height: 40%;
     font-size:1em;
 }
 
@@ -83,6 +85,7 @@
     color: var(--pinkpers);
     text-align: center;
     font-family: NunitoEBold;
+    margin-bottom: 10px;
 }
 
 section .botao-colabore{
@@ -97,7 +100,7 @@ section .botao-colabore{
     align-items:center;
     text-decoration: none;
     color: white;
-    font-size: 45px;
+    font-size: 200%;
     font-family: NunitoEBold;
 }
 
@@ -110,11 +113,354 @@ section .botao-colabore{
     font-size: 45px;
     text-align: center;
     position: relative;
-    top: 22.25px;
+    top: 15.25px;
 }
 
 
 .entre-em-contato{
     height:100vh;
     background-color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
 }
+
+.form-contato{
+    
+    display:flex;
+    flex-direction: column;
+    height:50vh;
+    width:90vw;
+    justify-content:center;
+    align-items:center;
+    flex-grow: 1;
+}
+
+.form-contato .form-top{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-top .form-esq{
+    height: 60%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.campo-form{
+    width: 100%;
+}
+
+.form-esq .campo-form input{
+    height: 60px;
+    width: 85%;
+    border-radius: 10px;
+    background-color:var(--greypers);
+}
+
+.form-top .form-dir{
+    height: 55%;
+    width: 38%;
+}
+
+.form-top .form-dir  textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color:var(--greypers);
+}
+
+.form-botao input{
+    box-sizing: border-box;
+    width:calc(100vw/5);
+    background-color: var(--pinkpers);
+    margin: 5% auto;
+    height: calc(0.177*100vw/3);
+    border-radius:16px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    font-size: 5em;
+    font-family: NunitoEBold;
+    cursor: pointer;
+}
+
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--pinkpers);
+    color: white;
+    width: 100vw;
+    height: 18vh;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+footer ul li{
+    width: calc(100vw/3);
+    display: flex;
+    justify-content:center;
+}
+
+#politicas-e-termos{
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-contatos{
+    width: 100%;
+    text-align:left;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+#lista-contatos a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#lista-contatos-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+
+.forma-contato a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+input, textarea{
+    border: 1px solid  var(--pinkpers);
+}
+
+input:focus{
+    border: 1px solid  var(--pinkpers);
+}
+
+@media screen and (max-width: 1450px) {
+    .area-cards .card-item{
+        width: calc(90vw/3);
+        height: calc(1.9*70vw/3);
+        margin: 15px;
+        background-color: whitesmoke;
+        border-radius:32px;
+        margin-bottom: 26px;
+    }
+
+    .form-botao{
+        width: 30%;
+    }
+    .form-botao input{
+        box-sizing: border-box;
+        width:100%;
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .nossos-projetos .descricao-acoes{
+        width: 65%;
+    }
+
+    .area-cards .card-item{
+        width: calc(90vw/3);
+        height: calc(1.9*70vw/3);
+        margin: 15px;
+        background-color: whitesmoke;
+        border-radius:32px;
+        margin-bottom: 26px;
+    }
+    
+     .card-item .container-imagem{
+        height:45%;
+    }
+    
+    .card-item img{
+        width: 100%;
+        height: 100%;
+        border-radius: 32px 32px 0 0;
+    }
+    
+    .card-item .container-descricao{
+        height: 50%;
+        font-size:87.5%;
+    }
+    
+    .card-item .container-descricao h2{
+        margin-bottom: 2%;
+    }
+    
+    .tit-entre-em-contato{
+        width:calc(100vw);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nossos-projetos .caixa-divisora-azul{
+        font-size: 180%;
+    }
+
+    .area-cards .card-item{
+        width: 70vw;
+        height: calc(1.4*70vw);
+    }
+
+    .card-item .container-imagem{
+        height:60%;
+    }
+
+    .card-item .container-descricao{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin: 2% auto;
+        height: 35%;
+        font-size:1em;
+    }
+
+    section .botao-colabore{
+        box-sizing: border-box;
+        width:calc(110vw/3);
+        height: calc(0.300*100vw/2);
+    }
+
+    .descricao-entre-contato{
+        width:80%;
+        text-align: center;
+    }
+
+    .form-contato .form-top{
+        flex-direction: column;
+    }
+
+    .form-top .form-esq, .form-top .form-dir{
+        justify-content: center;
+        width: 90%;
+    }
+
+    .campo-form{
+        margin: 15px auto;
+    }
+    
+    .form-esq .campo-form input{
+        width: 100%;
+    }
+
+    footer{
+        height: 25vh;
+    }
+    
+    footer ul li{
+        width: calc(100vw/3);
+        display: flex;
+        justify-content:center;
+    }
+    
+    #lista-contatos{
+        width: 10%;
+        text-align:left;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #lista-contatos a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    #lista-contatos-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+    } 
+    
+}
+
+@media screen and (max-width: 600px) {
+    .nossos-projetos .caixa-divisora-azul{
+        width: 62%;
+        font-size: 100%;
+    }
+
+    .area-cards .card-item{
+        width: 84vw;
+        height: calc(1.4*90vw);
+        margin: 15px;
+        background-color: whitesmoke;
+        border-radius:32px;
+        margin-bottom: 26px;
+    }
+
+    .card-item .container-descricao{
+        font-size:0.72em;
+    }
+
+    .form-contato{
+        margin-top: 10% ;
+    }
+
+    .form-botao input{
+        font-size: 100%;
+    }
+
+    .form-top .form-dir{
+        margin-top:10%;
+    }
+
+    footer{
+        height: 50vh;
+    }
+    
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    footer ul li{
+        width: 100vw;
+        margin: 2%;   
+    }
+    
+    #lista-contatos{
+        margin: 20px;
+    }
+    
+    #lista-contatos a{
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
